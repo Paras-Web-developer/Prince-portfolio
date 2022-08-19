@@ -205,8 +205,7 @@
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
     content: 'prev';
-    margin-top: 400rem;
-    
+    /* margin-top: 400rem; */
     
 }
 
@@ -219,7 +218,7 @@
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
     content: 'next';
-    margin-top: 400rem;
+    /* margin-top: 380rem; */
 }
 
 .swiper-button-next.swiper-button-white,
@@ -237,7 +236,6 @@
 }
 
 .swiper-pagination {
-    position: absolute;
     text-align: center;
     transition: .3s opacity;
     transform: translate3d(0, 0, 0);

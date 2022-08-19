@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 175;
+  --hue-color: 17;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -706,11 +706,11 @@ border-radius: .5rem;
 }
 
 .portfolio__content{
-  padding: 1rem 2.5rem;
+  padding: 0rem 1.5rem;
 }
 
 .portfolio__img{
-  width: 265px;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -730,25 +730,38 @@ border-radius: .5rem;
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
-  contain: '';
+  content: '';
 }
 
 .swiper-portfolio-icon{
-  font-size: 1rem;
+  font-size: 3rem;
   color: var(--first-color);
 }
 
 .swiper-button-prev{
-  left: -.2rem;
+  left: -1rem;
+  position: relative;
+  margin-top: -17rem;
 }
 
 .swiper-button-next{
-  /* right: -.5rem; */
+  /* right: 2.5rem; */
+  position: relative;
+  top: -15rem;
+  right: -95%;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
-  bottom: -2.5rem;
-  color: red;
+  bottom: 3rem;
+}
+.swiper.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet{
+  outline: none;
 }
 /*==================== PROJECT IN MIND ====================*/
 
