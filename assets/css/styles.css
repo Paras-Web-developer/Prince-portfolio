@@ -748,6 +748,7 @@ border-radius: .5rem;
 
 .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom: -2.5rem;
+  color: red;
 }
 /*==================== PROJECT IN MIND ====================*/
 
