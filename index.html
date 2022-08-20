@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-home nav__icon"></i>Home
                         </a>
                     </li>
@@ -60,6 +60,9 @@
             </div>
 
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -899,11 +902,50 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Prince Grover</h1>
+                <span class="footer__subtitle">Frontend developer</span>
+            </div>
 
+            <ul class="footer__links">
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio" class="footer__link">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="footer__link">Contact me</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://www.instagram.com/prince_grover01/" target="_blank" class="footer__social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/9996407289" target="_blank" class="footer__social whatsapp_float">
+                    <i class="uil uil-whatsapp"></i>
+                </a>
+
+                <a href="https://github.com/Paras-Web-developer" target="_blank" class="footer__social">
+                    <i class="uil uil-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; Prince. All right reserved</p>
+      </div>
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scroolup__icon"></i>
+      </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>
