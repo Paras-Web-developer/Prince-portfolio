@@ -48,47 +48,47 @@ skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleskills);
 });
 /*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]');
-tabcontents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll("[data-target]");
+tabcontents = document.querySelectorAll("[data-content]");
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
 
-    tabcontents.forEach(tabcontent => {
-      tabcontent.classList.remove('qualification__active');
-    })
-    target.classList.add('qualification__active')
+    tabcontents.forEach((tabcontent) => {
+      tabcontent.classList.remove("qualification__active");
+    });
+    target.classList.add("qualification__active");
 
-    tab.forEach(tab =>{
-        tab.classList.remove('qualification__active')
-    })
-    tab.classList.add('qualification__active')
-  })
-})
+    tab.forEach((tab) => {
+      tab.classList.remove("qualification__active");
+    });
+    tab.classList.add("qualification__active");
+  });
+});
 
 /*==================== SERVICES MODAL ====================*/
-const modalviews = document.querySelectorAll('.services__modal'),
-      modalBtns =  document.querySelectorAll('.services__button'),
-      modalcloses = document.querySelectorAll('.services__modal-close')
+const modalviews = document.querySelectorAll(".services__modal"),
+  modalBtns = document.querySelectorAll(".services__button"),
+  modalcloses = document.querySelectorAll(".services__modal-close");
 
-      let modal = function(modalclick){
-        modalviews[modalclick].classList.add('active-modal')
-      }
+let modal = function (modalclick) {
+  modalviews[modalclick].classList.add("active-modal");
+};
 
-      modalBtns.forEach((modalBtn,i) =>{
-        modalBtn.addEventListener('click',() =>{
-          modal(i)
-        })
-      })
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
 
-      modalcloses.forEach((modalclose) => {
-        modalclose.addEventListener('click', () =>{
-          modalviews.forEach((modalview) => {
-            modalview.classList.remove('active-modal')
-          })
-        })
-      })
+modalcloses.forEach((modalclose) => {
+  modalclose.addEventListener("click", () => {
+    modalviews.forEach((modalview) => {
+      modalview.classList.remove("active-modal");
+    });
+  });
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
@@ -105,20 +105,16 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
 });
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper(".testimonial__container", {
+  cssMode: true,
   // loop: true,
-  grabcursor: true,
-  spaceBetween: 48,
- 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
   },
-  breakpoints:{
-    568:{
-      slidesPerview: 2,
-    }
-  }
 });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 

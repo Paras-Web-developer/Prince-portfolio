@@ -344,7 +344,8 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     left: 50%;
     transform: translateX(-50%);
-    white-space: nowrap
+    white-space: nowrap;
+    margin-left: 11rem;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
