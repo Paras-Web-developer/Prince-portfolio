@@ -144,7 +144,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 
 .section__title {
@@ -775,6 +775,7 @@ border-radius: .5rem;
 .swiper-portfolio-icon{
   font-size: 3rem;
   color: var(--first-color);
+  margin-top: -80px;
 }
 
 .swiper-button-prev{
@@ -793,6 +794,11 @@ border-radius: .5rem;
 .swiper-container-horizontal > .swiper-pagination-bullets{
   bottom: 3rem;
 }
+
+.adjust{
+  position: relative;
+  top: 220px;
+}
 .swiper.swiper-pagination-bullet-active{
   background-color: var(--first-color);
 }
@@ -810,8 +816,8 @@ border-radius: .5rem;
 
 .project__bg{
   background-color: var(--first-color-second);
-  padding-top: 3rem;
-  margin-top: 4rem;
+  padding-top: 4rem;
+  margin-top: 8rem;
 }
 
 .project__title{
