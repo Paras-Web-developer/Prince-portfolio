@@ -699,7 +699,7 @@ about__info-name {
 
 .services__modal-content{
   position: relative;
-  background-color: var(--container-color);
+  background-color: hsl(250deg 17% 13%);
   padding: 1.5rem;
 border-radius: .5rem;
 }
