@@ -836,6 +836,7 @@ about__info-name {
   background-color: var(--first-color-second);
   padding-top: 4rem;
   margin-top: 8rem;
+  overflow: hidden;
 }
 
 .project__title {
@@ -857,8 +858,6 @@ about__info-name {
   justify-self: center;
   position: relative;
   top: 55px;
-  box-shadow: 0px 0px 16px 0px;
-  border-radius: 14px;
 }
 
 
@@ -905,7 +904,7 @@ about__info-name {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .contact__information {
