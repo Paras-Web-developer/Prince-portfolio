@@ -522,7 +522,7 @@ about__info-name {
 }
 
 .skills__CSS {
-  width: 70%;
+  width: 90%;
 }
 
 .skills__tailwind {
@@ -534,7 +534,7 @@ about__info-name {
 }
 
 .skills__react {
-  width: 30%;
+  width: 70%;
 }
 
 .skills__UI-UX {
@@ -729,6 +729,7 @@ about__info-name {
 }
 
 .services__modal-title {
+  color: white;
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
@@ -1045,11 +1046,131 @@ about__info-name {
   border-radius: .5rem;
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/* ==================== MEDIA QUERIES ====================
+/* Styles for phones */
+@media only screen and (max-width: 767px) {}
 
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* For medium devices */
+  .about {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
 
+  .skills {
+    padding: 1rem 5rem;
+  }
 
-/* For large devices */
+  .qualification {
+    padding: 1rem 5rem;
+  }
+
+  .services {
+    padding: 1rem 5rem;
+  }
+
+  .portfolio {
+    padding: 1rem 5rem;
+  }
+
+  .project__bg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    max-width: 1968px;
+  }
+
+  .nav__list {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__close {
+    display: none;
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    padding: 1rem 15rem;
+  }
+
+  .qualification {
+    padding: 1rem 15rem;
+  }
+
+  .services {
+    padding: 1rem 15rem;
+  }
+
+  .portfolio {
+    padding: 1rem 15rem;
+  }
+
+  .project__bg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact {
+    padding: 1rem 15rem;
+
+  }
+
+  .nav {
+    max-width: 1968px;
+  }
+
+  .nav__list {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__close {
+    display: none;
+  }
+}
